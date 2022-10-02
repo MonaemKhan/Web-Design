@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sign in_ sign up_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Online Tickets</title>
+</head>
+
+<body>
+
+<!-- sign in work -->
+    <div class="container" id="signin">
+        <div class="header">
+            <h2>Login</h2>
+        </div>
+        <div class="form">
+            <div class="form-control">
+                <label>Username:</label>
+                <input type="text" id="sign-in-username" required autofocus />
+            </div>
+
+            <div class="form-control">
+                <label>Password:</label>
+                <input type="password" id="sign-in-password" />
+                <small style="visibility: hidden;">Error Massage</small>
+            </div>
+
+            <button id="login-button">Login</button>
+            <h4> if you do not have an account then,
+                <a href="#" id="signup_link" style="text-decoration: none;">sign up</a>
+            </h4>
+        </div>
+    </div>
+<!-- sign up work -->
+    <div class="container" id="signup" style="visibility: hidden;">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <div class="form">
+            <!-- username -->
+            <div class="form-control">
+                <label>Username:</label>
+                <input type="text" id="username" required autofocus/>
+                <i id="username-cir" class="fas fa-check-circle" style="visibility: hidden;"></i>
+                <i id="username-exe" class="fas fa-exclamation-circle" style="visibility: hidden;"></i>
+                <small id="username-small" style="visibility: hidden;">Error Massage</small>
+            </div>
+            <!-- email -->
+            <div class="form-control">
+                <label>Mobile no.:</label>
+                <input type="number" id="mobile" />
+                <i id="email-cir" class="fas fa-check-circle" style="visibility: hidden;"></i>
+                <i id="email-exe" class="fas fa-exclamation-circle" style="visibility: hidden;"></i>
+                <small id="email-small" style="visibility: hidden;">Error Massage</small>
+            </div>
+            <!-- password1 -->
+            <div class="form-control">
+                <label>Password:</label>
+                <input type="password" id="password1" />
+                <i id="password1-cir" class="fas fa-check-circle" style="visibility: hidden;"></i>
+                <i class="fas fa-exclamation-circle" style="visibility: hidden;"></i>
+                <small id="password1-small" style="visibility: hidden;">Error Massage</small>
+            </div>
+            <!-- password2 -->
+            <div class="form-control">
+                <label>Password:</label>
+                <input type="password" id="password2" />
+                <i id="password-cir" class="fas fa-check-circle" style="visibility: hidden;"></i>
+                <i id="password-exe" class="fas fa-exclamation-circle" style="visibility: hidden;"></i>
+                <small id="password-small" style="visibility: hidden;">Error Massage</small>
+            </div>
+
+            <button id="signup_button">Sign Up</button>
+            <h4> if you already have an account then,
+                <a href="#" id="signin_link" style="text-decoration: none;">sign in</a>
+            </h4>
+        </div>
+    </div>
+
+    <div>
+        <a href="http://localhost//SimpleBusTicket-PHP/" style="text-decoration: none;">
+            <button id="admin_button">Login As Admin</button>
+        </a>
+    </div>
+    <div>
+        <a href="bus.html" style="text-decoration: none;">
+            <button id="back_button">Back to Home page</button>
+        </a>
+    </div>
+    
+    <script src="js/signup_page.js"></script>
+    <script src="js/link button.js"></script>
+</body>
+
+</html>

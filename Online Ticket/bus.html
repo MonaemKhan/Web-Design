@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Online Tickets </title>
+    <link rel="stylesheet" href="css/bus.css">
+    <link rel="stylesheet" href="css/search page css.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo_center">
+            <div id="logo">
+                <img src="img/logo.png" alt="" style="width: 160px; height: 60px;padding-right: 1px;">
+            </div>
+
+            <div id="center">
+                <div>
+                    <a href="bus.html"> <img src="img/bus.png" alt=""
+                            style="width: 24px;height: 16px;padding-right: 5px;">Bus</a>
+                </div>
+
+                <div>
+                    <a href="#"><img src="img/boat.png" alt=""
+                            style="width: 24px;height: 16px;padding-right: 5px;">Launch</a>
+                </div>
+
+                <div>
+                    <a href="#"><img src="img/air.png" alt=""
+                            style="width: 24px;height: 16px;padding-right: 5px;">Air</a>
+                </div>
+
+            </div>
+        </div>
+        <div id="loginbt">
+            <a href="Sign in sign up.html">
+                <button>Login</button>
+            </a>
+        </div>
+    </nav>
+
+    <section id="search">
+        <div id="wr">Welcome To our Service</div>
+
+        <div id="ser">
+            <div>
+                <img src="img/location.png" alt="" style="width: 25px;height: 30px;padding-top: 30px;">
+            </div>
+
+            <div>
+                <div class="ser_sub">
+                    <label>From:</label><br>
+                    <select class="select" id="from_select" style="width:150px;height:30px;cursor: pointer;">
+                        <option>Dhaka</option>
+                        <option>Chottogram</option>
+                        <option>shylhet</option>
+                        <option>Chapainawabganj</option>
+                        <option>Rajshahi</option>
+                        <option>Barisal</option>
+                        <option>Rangamati</option>
+                        <option selected></option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div>
+                <img src="img/location.png" alt="" style="width: 25px;height: 30px;padding-top: 30px;">
+            </div>
+
+            <div class="ser_sub">
+                <label>To:</label><br>
+                <select class="select" id="to_select" style="width:150px;height:30px;cursor: pointer;">
+                    <option>Dhaka</option>
+                    <option>Chottogram</option>
+                    <option>shylhet</option>
+                    <option>Chapainawabganj</option>
+                    <option>Rajshahi</option>
+                    <option>Barisal</option>
+                    <option>Rangamati</option>
+                    <option selected></option>
+                </select>
+            </div>
+
+            <div>
+                <img src="img/date.png" alt="" style="width: 25px;height: 30px;padding-top: 30px;">
+            </div>
+
+            <div class="ser_sub">
+                <label>Journey Date:</label><br>
+                <input class="select" id="date_select" type="date" style="width:150px;height:25px;cursor: pointer;">
+            </div>
+
+            <!-- <div class="ser_sub">
+                <label>Bus Type:</label><br>
+                <select id="bus_type" style="width:150px;height:30px;cursor: pointer;">
+                    <option>AC</option>
+                    <option>Non-AC</option>
+                    <option selected></option>
+                </select>
+            </div> -->
+
+            <div id="subm">
+                <a href="#mod"><button id="sub_button">Search</button></a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="call">
+
+        <p class="call_left">Call Us For Help</p>
+        <p class="call_right"> <img src="img/call.png" alt="" style="height: 30px;width: 50px;"> 1625252</p>
+
+    </section>
+
+    <section id="sld">
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons end-->
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="img/sl1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/sl2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/sl3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/sl4.jfif" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 3000);
+        </script>
+    </section>
+
+    <section id="mod">
+        <div id="modify">
+            <div>
+                <h3>Onword Journey</h3>
+                <h2 id="journey_label">From to TO Sunday 05 June, 2022 </h2>
+            </div>
+            <button id="modify_button"> Modify Search</button>
+        </div>
+
+        <div id="modify_search">
+            <div id="sear">
+
+                <div class="search_input">
+                    <div>
+                        <img src="img/location.png" alt="">
+                    </div>
+                    <div class="search_input_lebel">
+                        <h4>From:</h4>
+                        <select class="search_result">
+                            <option>Chittagong</option>
+                            <option>Dhaka</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="search_input">
+                    <div>
+                        <img src="img/location.png" alt="">
+                    </div>
+                    <div class="search_input_lebel">
+                        <h4>To:</h4>
+                        <select class="search_result">
+                            <option>Chittagong</option>
+                            <option>Dhaka</option>
+                        </select>
+                    </div>
+                    <div class="search_input_lebel">
+                        <label style="margin-left: 20px;">Journey Date:</label><br>
+                        <input class="search_result" id="date_select" type="date"
+                            style="width:150px;height:25px;cursor: pointer;padding: 1px;margin-left: 20px;">
+                    </div>
+                </div>
+
+            </div>
+
+            <button id="modify_search_button"> Search</button>
+        </div>
+    </section>
+
+    <section id="ticket-process">
+
+        <div id="search_result">
+
+            <div id="search-result-bus">
+                <h3>Select Bus:</h3>
+                <select>
+                    <option value="Hanif">Hanif</option>
+                </select>
+                <label for="">Bus Fair : 800 tk</label>
+            </div>
+
+            <div id="search-result-seat">
+                <h3>Select Seat:</h3>
+                <select id="seat-select">
+                    <option value="" selected></option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="A3">A3</option>
+                    <option value="A4">A4</option>
+                </select>
+                <button id="add_seat">Add</button>
+            </div>
+
+            <div id="search-result-select">
+                <div id="select-option">
+                    <div>
+                        <h3>Total Ticket:</h3>
+                        <h3>Seat Number:</h3>
+                        <h3>Total Fair:</h3>
+                    </div>
+                    <div>
+                        <h3 id="ticket-num"></h3>
+                        <h3 id="seat-num"></h3>
+                        <h3 id="ticket-fair"></h3>
+                    </div>
+                </div>
+
+                <button id="proceed_button">Proceed</button>
+            </div>
+
+        </div>
+
+        <div id="ticket_details">
+
+            <div id="mobile">
+                <h3>Mobile No.:</h3>
+                <input disabled id="mobile_input" class="input_sec" type="text" placeholder="Mobile No.">
+                <button disabled id="mobile_button" class="input_button_sec">></button>
+            </div>
+
+            <div>
+                <input disabled id="varify_input" class="input_sec" type="text" placeholder="Varification Code">
+                <button disabled id="varify_button" class="input_button_sec">></button>
+            </div>
+
+            <div id="personal-details">
+                <div>
+                    <h3>Name:</h3><br>
+                    <h3>Address:</h3>
+                </div>
+                <div>
+                    <input id="name_input" disabled class="input_sec" type="text" placeholder="Name"><br>
+                    <textarea id="address_input" disabled cols="21" rows="4"></textarea>
+                </div>
+            </div>
+
+            <div>
+                <button id="submit_next">Next</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="road">
+        <div id="route">
+
+            <table>
+                <caption>Populer Bus Route</caption>
+                <tr>
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Dhaka - Rangamati</span>
+                    </td>
+
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Chottogram - Rangamati</span>
+                    </td>
+
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>shylhet - Rangamati</span>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Dhaka - Chottogram</span>
+                    </td>
+
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Dhaka - shylhet</span>
+                    </td>
+
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Dhaka - Rajshahi</span>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Dhaka - Chapainawabganj</span>
+                    </td>
+
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Dhaka - Barisal</span>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Chottogram - Chapainawabganj</span>
+                    </td>
+
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Chottogram - Rajshahi</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Chottogram - Barisal</span>
+                    </td>
+
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Chottogram - shylhet</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>shylhet - Barisal</span>
+                    </td>
+
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>shylhet - Rajshahi</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>shylhet - Chapainawabganj</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Rajshahi - Barisal</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/delivery.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Chapainawabganj - Barisal</span>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+    </section>
+
+    <section id="bus_service">
+        <div id="company">
+
+            <table>
+                <caption>Populer Bus Service</caption>
+                <tr>
+                    <td>
+                        <img src="img/bus-school.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Shyamoli Travels</span>
+                    </td>
+
+                    <td>
+                        <img src="img/bus-school.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Hanif Travels</span>
+                    </td>
+
+                    <td>
+                        <img src="img/bus-school.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>S Alam Travels</span>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/bus-school.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Relax Travels</span>
+                    </td>
+
+                    <td>
+                        <img src="img/bus-school.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Sarkar Travels</span>
+                    </td>
+
+                    <td>
+                        <img src="img/bus-school.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Unique Travels</span>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/bus-school.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Desh Travels</span>
+                    </td>
+
+                    <td>
+                        <img src="img/bus-school.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Grameen Travels</span>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/bus-school.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>National Travels</span>
+                    </td>
+
+                    <td>
+                        <img src="img/bus-school.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Vai Vai Travels</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/bus-school.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>Sonia Travels</span>
+                    </td>
+
+                    <td>
+                        <img src="img/bus-school.png" alt="" style="width: 20px; height: 20px; padding-right: 5px;">
+                        <span>RMSTU Travels</span>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="card">
+            <img src="img/logo.png" alt="" style="height: 60px;">
+            <div style="font-size: 25px;color: #777575;">
+                bdtickets.com is a premium online<br>
+                booking portal which allows you to<br>
+                purchase tickets for various bus<br>
+                services, launch services, movies<br>
+                and events across the country.<br>
+            </div>
+        </div>
+
+        <div class="card">
+            <strong>Company Info</strong>
+            <div class="term_about">
+                <div>
+                    <a href="#">Terms & Condition</a>
+                </div>
+                <div>
+                    <a href="#">FAQ</a>
+                </div>
+
+                <div>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <strong>About Online Ticketing</strong><br>
+            <div class="term_about">
+                <div>
+                    <a href="#">About US</a>
+                </div>
+
+                <div>
+                    <a href="contact_us.html">Contact US</a>
+                </div>
+
+                <div class="social_link">
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100010899606103" target="_blank">
+                            <img src="img/facebook-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/monaem_khan_/" target="_blank">
+                            <img src="img/instagram.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/channel/UCey4_LOPA5UvMbmZblTGtVw" target="_blank">
+                            <img src="img/youtube.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/Modify search js.js"></script>
+    <script src="js/Ticket Process js.js"></script>
+    <script src="js/search result js.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>

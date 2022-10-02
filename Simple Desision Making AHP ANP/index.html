@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>AHP</title>
+</head>
+
+<body>
+    <div id="heading">
+        <p>"<u>Goal To Criteria</u>"</p>
+    </div>
+    <div id ="ff">
+        <div id="AhpSection">
+            <label class="labelup">Criteria 1</label>
+            <label class="labelup">Criteria 2</label>
+            <label class="labelup">Criteria 3</label>
+            <br>
+            <label>Criteria 1</label>
+            <input type="num" class='criteria' value='1' disabled>
+            <input type="num" class='criteria' autofocus>
+            <input type="num" class='criteria'>
+            <br>
+            <label>Criteria 2</label>
+            <input type="num" class='criteria' value='0' disabled>
+            <input type="num" class='criteria' value='1' disabled>
+            <input type="num" class='criteria'>
+            <br>
+            <label>Criteria 3</label>
+            <input type="num" class='criteria' value='0' disabled>
+            <input type="num" class='criteria' value='0' disabled>
+            <input type="num" class='criteria' value='1' disabled>
+            <br>
+            <button id="ahpCal">Calculate</button>
+        </div>
+
+        <div id="result">
+            <p class = "para"><u>Criteria1</u> : ====== 33.33%</p>
+            <p class = "para"><u>Criteria2</u> : ====== 33.33%</p>
+            <p class = "para"><u>Criteria3</u> : ====== 33.33%</p>
+            <p class = "para">Total Weight is : 100%</p>
+        </div>
+    </div>
+
+
+    <script src="ahp.js"></script>
+</body>
+
+</html>
